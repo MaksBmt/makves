@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('html/head.html',{
+"title":"Главная"
+})
+
+<body>
+	<main>
+		 <aside class="sidebar">
+			<button class="sidebar__btn">
+				<svg class="sidebar__svg icon icon--btn" width="15" height="15">
+					<use xlink:href="img/icons/icons.svg#btn-left"></use>
+				</svg>
+			</button>
+			<div class="sidebar__wrap">
+				<header class="sidebar__header">
+					<ul class="sidebar__points">
+						<li class="sidebar__point sidebar__point--red"></li>
+						<li class="sidebar__point sidebar__point--yellow"></li>
+						<li class="sidebar__point sidebar__point--green"></li>
+					</ul>
+					<a class="sidebar__wrapper logo">
+						<img src="img/logo.svg" alt="logo" class="logo__img" width="30" height="50">
+						<p class="logo__text content">Technifly</p>
+					</a>
+				</header>
+				<nav class="nav sidebar__nav">
+					<a href="#" class="nav__link option option--js">
+						<svg class="option__svg icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#dashboard"></use>
+						</svg>
+						<span class="option__text content">Dashboard</span>
+					</a>
+
+					<a href="#" class="nav__link option option--active option--js">
+						<svg class="option__svg icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#sales"></use>
+						</svg>
+						<span class="option__text content">Sales</span>
+					</a>
+					<a href="#" class="nav__link option option--js">
+						<svg class="option__svg icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#costs"></use>
+						</svg>
+						<span class="option__text content">Costs</span>
+					</a>
+					<a href="#" class="nav__link option option--js">
+						<svg class="option__svg icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#payments"></use>
+						</svg>
+						<span class="option__text content">Payments</span>
+					</a>
+					<a href="#" class="nav__link option option--js">
+						<svg class="option__svg icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#finances"></use>
+						</svg>
+						<span class="option__text content">Finances</span>
+					</a>
+					<a href="#" class="nav__link option option--js">
+						<span class="option__wrap option__wrap--messages">
+							<svg class="option__svg icon icon--messages" width="15" height="15">
+								<use xlink:href="img/icons/icons.svg#messages"></use>
+							</svg>
+						</span>
+
+						<span class="option__text content">Messages</span>
+					</a>
+				</nav>
+				<ul class="nav nav__settings">
+					<li class="nav__item">
+						<a href="#" class="nav__link option option--js">
+							<svg class="option__svg icon" width="15" height="15">
+								<use xlink:href="img/icons/icons.svg#settings"></use>
+							</svg>
+							<span class="option__text content">Settings</span>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="#" class="nav__link option option--js">
+							<svg class="option__svg icon" width="15" height="15">
+								<use xlink:href="img/icons/icons.svg#support"></use>
+							</svg>
+							<span class="option__text content">Support</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+			<div class="sidebar__user user">
+				<div class="user__preview sidebar__wrapper sidebar__wrapper--user">
+					<img src="img/avatar.webp" alt="avatar" width="50" height="50" class="user__img">
+					<div class="user__wrapper content">
+						<p class="user__text">User Account</p>
+						<p class="user__title">Maks S.</p>
+					</div>
+					<button class="user__btn">
+						<svg class="icon" width="15" height="15">
+							<use xlink:href="img/icons/icons.svg#external"></use>
+						</svg>
+					</button>
+
+				</div>
+			</div>
+			<div class="modal modal--user user--modal">
+				<div class="user__preview">
+					<img src="img/avatar.webp" alt="avatar" width="50" height="50" class="user__img">
+				
+					<div class="user__wrapper content">
+						<p class="user__title">Maks S.</p>
+						<a href="" class="user__text">msolov.one@gmail.com</a>		
+					</div>				
+				</div>
+				<ul class="nav modal__nav">
+					<li class="nav__item">
+						<a href="" class="option">
+							<p class="option__text">View profile</p>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="" class="option">
+							<p class="option__text">Manage Subscriotions</p>
+						</a>
+					</li>
+					<li class="nav__item">
+						<a href="" class="option">
+							<p class="option__text">View history</p>
+						</a>
+					</li>
+				</ul>
+				<div class="user__logout">
+					<a href="" class="option option--logout">
+						<p class="option__text">Logout</p>
+					</a>
+					<p class="user__version">v 10.34 - Tems and Conditions</p>
+				</div>
+			</div>
+		</aside> 
+
+	</main>
+	<!-- @@include('html/footer.html',{}) -->
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

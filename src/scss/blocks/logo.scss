@@ -1,0 +1,24 @@
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    &__img {
+        display: block;
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+
+    &__text {
+        margin-left: 20px;
+        font-family: "Merriweather-Bold";
+        font-size: 16px;
+        color: blue;
+
+        &:hover {
+            color: rgb(86, 189, 249);
+        }
+    }
+}

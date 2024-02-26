@@ -1,0 +1,55 @@
+.option {
+    position: relative;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease 0s;
+
+    box-sizing: content-box; 
+    transition: $transition-common;
+    z-index: 5;
+
+    &:hover {
+        background-color: $bg-action;
+    }
+
+    &__text {
+        margin-left: 10px;
+        font-family: "Merriweather-Regular";
+        font-size: 12px;
+        line-height: 15px;
+        color: gray;
+    }
+
+    &__svg {
+        flex-shrink: 0;
+    }
+
+    &--active {
+        background-color: $bg-action;
+
+        .option__svg,
+        .option__text {
+            color: blue;
+        }
+    }
+
+    &__wrap--messages {
+        position: relative;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 4px;
+            height: 4px;
+            top: 12px;
+            right: 0;
+            border-radius: 50%;
+            background-color: red;
+        }
+    }
+
+    &--logout {
+        margin-bottom: 20px;
+    }
+}

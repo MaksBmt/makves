@@ -1,0 +1,81 @@
+.user {
+    border-top: 1px solid gray;
+
+    &--modal {
+        border: none;
+    }
+
+    &__preview {
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        display: block;
+        border-radius: 10px;
+    }
+
+    &__wrapper {
+        margin-left: 20px;
+        min-height: 50px;
+        min-width: 70px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        box-sizing: border-box;
+    }
+
+    &__title {
+        font-family: "Merriweather-Regular";
+        font-size: 16px;
+        line-height: 15px;
+        color: blue;
+    }
+
+    &__text {
+        font-family: "Merriweather-Regular";
+        font-size: 10px;
+        color: gray;
+    }
+
+    &__btn {
+        margin-left: auto;
+        background-color: inherit;
+        z-index: 10;
+        visibility: hidden;
+    }
+
+    &__logout {
+        position: relative;
+        padding: 10px;
+
+        &::before {
+            position: absolute;
+            content: '';
+            width: 15px;
+            height: 20px;
+            top: 50%;
+            right: 15px;
+            transform: translateY(-50%);
+            background-image: url(../img/logout.svg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+        }
+
+        .option {
+            &:hover {
+                background-color: inherit;
+            }
+        }
+    }
+
+    &__version {
+        font-family: "Merriweather-Regular";
+        font-size: 10px;
+        color: gray;
+        margin-left: 20px;
+    }
+}
